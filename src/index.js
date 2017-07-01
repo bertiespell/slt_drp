@@ -4,5 +4,26 @@ import './css/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import SocialMedia from './components/socialMedia';
+import Press from './components/press';
+import About from './components/about';
+import Events from './components/events';
+import Art from './components/art';
+
+ReactDOM.render(
+                <Router>
+                    <Route exact path="/" component={App}>
+                        <Route path="/socialMedia" component={SocialMedia}/>
+                        <Route path="/press" component={Press}/>
+                        <Route path="/art" component={Art}/>
+                        <Route path="/about" component={About}/>
+                        <Route path="/events" component={Events}/>
+                    </Route>
+</Router>, document.getElementById('root'));
 registerServiceWorker();

@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import '../config';
 import Button from 'react-bootstrap/lib/Button'
+import NavBar from './nav';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
         <div className="App-header">
           <h2>Welcome to React</h2>
         </div>
