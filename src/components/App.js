@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './css/App.css';
-import './config';
+import '../css/App.css';
+import '../config';
+import Button from 'react-bootstrap/lib/Button'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button bsStyle="primary">Primary</Button>
       </div>
     );
   }
