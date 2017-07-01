@@ -16,6 +16,8 @@ class NavBar extends Component {
     render() {
         return (
             <div>
+                <Router>
+                    <div>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/socialMedia">Social Media</Link></li>
@@ -24,6 +26,17 @@ class NavBar extends Component {
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/events">Events</Link></li>
                     </ul>
+
+                    <hr/>
+
+                    <Route path="/socialMedia" component={SocialMedia}/>
+                    <Route path="/press" component={Press}/>
+                    <Route path="/art" component={Art}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/events" component={Events}/>
+
+                    </div>
+                </Router>
             </div>
         )
     }

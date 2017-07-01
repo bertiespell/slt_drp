@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
 } from 'react-router-dom';
 
 import SocialMedia from './components/socialMedia';
@@ -19,11 +19,6 @@ import Art from './components/art';
 ReactDOM.render(
                 <Router>
                     <Route exact path="/" component={App}>
-                        <Route path="/socialMedia" component={SocialMedia}/>
-                        <Route path="/press" component={Press}/>
-                        <Route path="/art" component={Art}/>
-                        <Route path="/about" component={About}/>
-                        <Route path="/events" component={Events}/>
                     </Route>
 </Router>, document.getElementById('root'));
 registerServiceWorker();
