@@ -4,18 +4,14 @@ import '../config';
 import Button from 'react-bootstrap/lib/Button'
 import NavBar from './nav';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-
+import Carousel from './carousel.js';
 class App extends Component {
   render() {
     return (
       <div className="App">
+
         <NavBar />
-        App!
+        <Carousel />
       </div>
     );
   }

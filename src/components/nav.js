@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import App from './App';
+
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
 
-import App from './App';
 import SocialMedia from './socialMedia';
 import Press from './press';
 import About from './about';
