@@ -1,22 +1,11 @@
 import React, { Component } from 'react';
-import App from './App';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import SocialMedia from './socialMedia';
-import Press from './press';
-import About from './about';
-import Events from './events';
-import Art from './art';
-import Home from './home';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import NavDropdown from 'react-bootstrap/lib/NavDropdown';
+// import MenuItem from 'react-bootstrap/lib/MenuItem';
+// import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import brandImage from './images/smallbluelogo.jpg';
 
@@ -28,7 +17,7 @@ class NavBar extends Component {
               <Navbar.Header>
                 <Navbar.Toggle />
                 <div className="sd-logo">
-                  <img src={brandImage}></img>
+                  <img src={brandImage} alt="Slut Drop Logo"></img>
                 </div>
               </Navbar.Header>
               <Navbar.Collapse>
