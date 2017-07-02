@@ -15,13 +15,17 @@ class Events extends Component {
 
     componentDidMount () {
         this.props.getEvents();
+        this.props.events.events.map((event) => {
+            this.setState({ [event.sys.id]: false })
+        })
     }
 
     render() {
-        let lgClose = () => this.setState({ lgShow: false });
+        let lgClose = (key) => this.setState({ [key]: false });
         return (
             <div>
                 {this.props.events.events.map((event, i) => {
+                    let key = event.sys.id;
                     return (
                         <div>
                             <Media>
@@ -34,11 +38,11 @@ class Events extends Component {
                                     <p>{event.fields.eventPrice}</p>
 
                                 <ButtonToolbar>
-                                    <Button bsStyle="primary" onClick={()=>this.setState({ lgShow: true })}>
+                                    <Button bsStyle="primary" onClick={()=>this.setState({ [key]: true })}>
                                     More Details
                                     </Button>
 
-                                    <EventDescription show={this.state.lgShow} onHide={lgClose} description={event.fields.eventDescription} title={event.fields.eventTitle}/>
+                                    <EventDescription show={this.state[key]} onHide={lgClose.bind(this, key)} description={event.fields.eventDescription} title={event.fields.eventTitle}/>
                                     </ButtonToolbar>
                                 </Media.Body>
                             </Media>
