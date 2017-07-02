@@ -9,7 +9,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <NavBar />
         <Carousel />
       </div>
@@ -18,3 +17,5 @@ class App extends Component {
 }
 
 export default App;
+
+
