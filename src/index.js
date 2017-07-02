@@ -3,12 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from 'react-router-dom';
+import { BrowserRouter, Route, Switch, IndexRoute } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -25,10 +20,20 @@ import reducer from './reducers/index.reducer';
 const logger = createLogger();
 const store = createStore(reducer, applyMiddleware(thunk, logger));
 
-ReactDOM.render(<Provider store={store}>
-                <Router>
-                    <Route exact path="/" component={App}>
-                    </Route>
-                </Router>
+import Home from './components/home';
+
+ReactDOM.render(
+<Provider store={store}>
+  <BrowserRouter>
+    <App>
+      <Switch>
+        <Route exact path = '/' component={Home}/>
+        <Route path="/press" component={Press}/>
+        <Route path="/art" component={Art}/>
+        <Route path="/about" component={About}/>
+        <Route path="/events" component={Events}/>
+      </Switch>
+    </App>
+  </BrowserRouter>
 </Provider>, document.getElementById('root'));
 registerServiceWorker();

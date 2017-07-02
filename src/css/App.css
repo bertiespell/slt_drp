@@ -5,6 +5,66 @@
 }
 
 .sizecontrol {
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
+}
+
+.header {
+  height: 30vh;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  max-width: 960px;
+}
+
+.header-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.header-nav {
+  position: absolute;
+  width: 100%;
+}
+.left-float {
+  float: left;
+}
+.header-nav ul li {
+    float: left;
+    display: inline;
+    width: 11.25%;
+    padding: 0 1%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+}
+.sd-logo {
+}
+
+.sd-logo img {
+  height: 20vh;
+  border-radius: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 5vh;
+  position: absolute;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  height: 18vh;
+}
+
+.navbar-default .container {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
