@@ -18,26 +18,27 @@ import Nav from 'react-bootstrap/lib/Nav';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import NavItem from 'react-bootstrap/lib/NavItem';
+import brandImage from './images/smallbluelogo.jpg';
 
 class NavBar extends Component {
     render() {
         return (
           // <Router>
-            <Navbar inverse collapseOnSelect>
+            <Navbar collapseOnSelect>
               <Navbar.Header>
-                <Navbar.Brand>
-                  <a href="#">React-Bootstrap</a>
-                </Navbar.Brand>
                 <Navbar.Toggle />
+                <div className="sd-logo">
+                  <img src={brandImage}></img>
+                </div>
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav>
-                  <NavItem eventKey={1}><Link to="/">Home</Link></NavItem>
-                  <NavItem eventKey={2}><Link to="/events">Events</Link></NavItem>
+                  <NavItem><Link to="/">Home</Link></NavItem>
+                  <NavItem><Link to="/events">Events</Link></NavItem>
                 </Nav>
                 <Nav pullRight>
-                  <NavItem eventKey={1} href="#"><Link to="/press">Press</Link></NavItem>
-                  <NavItem eventKey={2} href="#"><Link to="/art">Art</Link></NavItem>
+                  <NavItem><Link to="/press">Press</Link></NavItem>
+                  <NavItem><Link to="/art">Art</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
 
