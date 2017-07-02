@@ -9,21 +9,21 @@ class CarouselComponent extends Component {
     return (
       <Carousel className='sizecontrol'>
     <Carousel.Item className="carousel-item">
-      <img responsive width={900} height={500} src={slider1}/>
+      <img responsive width={900} height={500} src={slider1} alt="Slut Drop Artwork"/>
       <Carousel.Caption>
         <h3>First slide label</h3>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item className="carousel-item">
-      <img responsive width={900} height={500} src={slider2}/>
+      <img responsive width={900} height={500} src={slider2} alt="Slut Drop Artwork"/>
       <Carousel.Caption>
         <h3>Second slide label</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item className="carousel-item">
-      <img responsive width={900} height={500} src={slider3}/>
+      <img responsive width={900} height={500} src={slider3} alt="Slut Drop Artwork"/>
       <Carousel.Caption>
         <h3>Third slide label</h3>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
