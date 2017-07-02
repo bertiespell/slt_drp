@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
 .carousel-item img {
   height: 100vh;
   width: 100vw;
@@ -45,26 +51,50 @@
     color: #333;
 }
 .sd-logo {
+    height: 120px;
+    width: 150px;
+    margin: auto;
+    top: 2vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 20%;
 }
-
 .sd-logo img {
-  height: 20vh;
+  max-height: 120px;
   border-radius: 50%;
   margin: auto;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 5vh;
+  top: 0;
   position: absolute;
 }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: white;
   border: none;
-  height: 18vh;
+  min-height: 120px;
+  margin: none;
 }
 
 .navbar-default .container {
-  margin-left: 20vw;
-  margin-right: 20vw;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  font-size: 2em;
+}
+
+.divider {
+  border-top: 3px solid #14295B;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+.divider2 {
+  border-top: 1px solid #14295B;
+  margin: 0;
+  padding: 0;
 }

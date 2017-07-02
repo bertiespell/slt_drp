@@ -32,15 +32,19 @@ class NavBar extends Component {
                 </div>
               </Navbar.Header>
               <Navbar.Collapse>
-                <Nav>
-                  <NavItem><Link to="/">Home</Link></NavItem>
-                  <NavItem><Link to="/events">Events</Link></NavItem>
-                </Nav>
-                <Nav pullRight>
-                  <NavItem><Link to="/press">Press</Link></NavItem>
-                  <NavItem><Link to="/art">Art</Link></NavItem>
-                </Nav>
+                <div>
+                  <Nav>
+                    <NavItem><Link to="/">Home</Link></NavItem>
+                    <NavItem><Link to="/events">Events</Link></NavItem>
+                  </Nav>
+                  <Nav pullRight>
+                    <NavItem><Link to="/press">Press</Link></NavItem>
+                    <NavItem><Link to="/art">Art</Link></NavItem>
+                  </Nav>
+                </div>
               </Navbar.Collapse>
+              <hr className="divider"/>
+              <hr className="divider2"/>
 
             </Navbar>
         )
