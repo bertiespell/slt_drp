@@ -5,7 +5,6 @@ class Press extends Component {
     render() {
         return (
             <div>
-                <h1>Press</h1>
                 <PressThumbnail />
             </div>
         )
@@ -13,4 +12,3 @@ class Press extends Component {
 }
 
 export default Press;
-

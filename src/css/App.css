@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Oswald', sans-serif;
+  background: darkcyan;
 }
 .blackBackground img {
   background-color: black;
@@ -11,6 +12,13 @@ body {
   height: 100vh;
   width: 100vw;
 
+}
+
+.PressTitle {
+  font-size: 5em;
+  color: purple;
+  text-align: center;
+  margin-bottom: 10%;
 }
 
 .sizecontrol {
@@ -51,7 +59,7 @@ body {
     text-overflow: ellipsis;
     font-size: 1em;
     font-weight: 600;
-    color: #333;
+    color: white;
 }
 .sd-logo {
     height: 120px;
@@ -62,7 +70,6 @@ body {
     left: 0;
     right: 0;
     position: absolute;
-    background-color: white;
     border-radius: 20%;
 }
 .sd-logo img {
@@ -77,10 +84,18 @@ body {
 }
 
 .navbar-default {
-  background-color: white;
+  background-color: darkcyan;
   border: none;
   min-height: 120px;
   margin: none;
+  color: white;
+}
+.nav li a a {
+  color: white
+}
+
+.thumbnail {
+  padding: 10px;
 }
 
 .navbar-default .container {
