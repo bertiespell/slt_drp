@@ -3,6 +3,9 @@
 body {
   font-family: 'Oswald', sans-serif;
 }
+.blackBackground img {
+  background-color: black;
+}
 
 .carousel-item img {
   height: 100vh;
