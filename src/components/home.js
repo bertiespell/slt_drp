@@ -2,26 +2,10 @@ import React, { Component } from 'react';
 import Carousel from './carousel';
 import { Timeline } from 'react-twitter-widgets'
 import Events from './events';
-import FacebookProvider, { Feed  } from 'react-facebook';
-import FB from 'fb';
+
 
 
 class Home extends Component {
-  componentDidMount() {
-    window.fbAsyncInit = function() {
-  FB.init({
-    appId            : '116022249025281',
-    autoLogAppEvents : true,
-    xfbml            : true,
-    version          : 'v2.9'
-  });
-  FB.AppEvents.logPageView();
-};
-
-}
-componentDidUpdate() {
-     FB.XFBML.parse();
-}
     render() {
         return (
           <div>

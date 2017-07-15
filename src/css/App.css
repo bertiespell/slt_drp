@@ -23,6 +23,26 @@ body {
   max-width: 960px;
 }
 
+.Media {
+  border: 1px solid purple;
+  border-radius: 20px;
+  height: 300px;
+  margin: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.Media p {
+  color: purple;
+  font-size: 20px;
+}
+.events {
+  max-width: 60%;
+  margin: 0 auto;
+
+
+}
+
 .header-container {
   position: relative;
   margin: 0 auto;
