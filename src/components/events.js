@@ -16,7 +16,7 @@ class Events extends Component {
     componentDidMount () {
         this.props.getEvents();
         this.props.events.events.map((event) => {
-            this.setState({ [event.sys.id]: false })
+            return this.setState({ [event.sys.id]: false })
         })
     }
 
@@ -26,11 +26,12 @@ class Events extends Component {
             <div>
                 {this.props.events.events.map((event, i) => {
                     let key = event.sys.id;
+                    console.log(event.fields.eventDescription)
                     return (
                         <div>
                             <Media>
                                 <Media.Left align="top">
-                                    <img width={200} height={200} src={event.fields.eventImage.fields.file.url} alt="Image"/>
+                                    <img width={200} height={200} src={event.fields.eventImage.fields.file.url} alt="Event Artwork"/>
                                 </Media.Left>
                                 <Media.Body>
                                     <Media.Heading>{event.fields.eventTitle}</Media.Heading>
