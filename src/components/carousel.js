@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/lib/Carousel';
-import slider1 from './images/ColourfulSD.png';
-import slider2 from './images/blueplates.jpg';
-import slider3 from './images/blackplates.jpg';
+import slider1 from './images/lights.jpg';
+import slider2 from './images/slut-drop-stage.jpg';
+import slider3 from './images/strobe-art.jpg';
+import slider4 from './images/cat-slut-drop.jpg';
+import slider5 from './images/lights-art.jpg';
+// import slider6 from './images/strobe-art.jpg';
+
 
 class CarouselComponent extends Component {
   render () {
@@ -24,6 +28,20 @@ class CarouselComponent extends Component {
     </Carousel.Item>
     <Carousel.Item className="carousel-item">
       <img responsive width={900} height={500} src={slider3} alt="Slut Drop Artwork"/>
+      <Carousel.Caption>
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+        <Carousel.Item className="carousel-item">
+      <img responsive width={900} height={500} src={slider4} alt="Slut Drop Artwork"/>
+      <Carousel.Caption>
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+        <Carousel.Item className="carousel-item">
+      <img responsive width={900} height={500} src={slider5} alt="Slut Drop Artwork"/>
       <Carousel.Caption>
         <h3>Third slide label</h3>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
