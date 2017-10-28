@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import '../config';
+// import '../config';
 import NavBar from './nav';
 
 class App extends Component {
@@ -15,5 +15,3 @@ class App extends Component {
 }
 
 export default App;
-
-

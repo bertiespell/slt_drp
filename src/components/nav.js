@@ -22,13 +22,17 @@ class NavBar extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <div>
-                  <Nav>
-                    <NavItem><Link to="/">Home</Link></NavItem>
-                    <NavItem><Link to="/events">Events</Link></NavItem>
+                  <Nav className="left-nav-stuff">
+                    <div>
+                      <Link to="/">&hearts;Home&hearts;</Link>
+                      <Link to="/events">&hearts;Events&hearts;</Link>
+                    </div>
                   </Nav>
-                  <Nav pullRight>
-                    <NavItem><Link to="/press">Press</Link></NavItem>
-                    <NavItem><Link to="/art">Art</Link></NavItem>
+                  <Nav pullRight className="right-nav-stuff">
+                    <div>
+                      <Link to="/press">&hearts;Press&hearts;</Link>
+                      <Link to="/contact">&hearts;Contact&hearts;</Link>
+                    </div>
                   </Nav>
                 </div>
               </Navbar.Collapse>

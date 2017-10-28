@@ -109,6 +109,35 @@ body {
   border: none;
   min-height: 120px;
   margin: none;
+  color: white;
+}
+.nav li a a {
+  color: #C0B283;
+  text-shadow: 2px 2px #373737;
+  font-size: 35px;
+}
+.collapse ul a {
+  color: #C0B283;
+  font-size: 35px;
+  text-shadow: 2px 2px #373737;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.left-nav-stuff {
+  max-width: 44%;
+}
+.right-nav-stuff {
+  max-width: 46%;
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px)  {
+  .nav li a a {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 1000px)  {
+  .nav li a a {
+    font-size: 26px;
+  }
 }
 
 .navbar-default .container {

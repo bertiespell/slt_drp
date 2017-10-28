@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from './carousel';
 import { Timeline } from 'react-twitter-widgets'
-import Events from './events';
 
 
 
@@ -11,9 +10,6 @@ class Home extends Component {
           <div>
             <Carousel />
             <div className="things">
-              <div className="thing">
-                <Events />
-              </div>
               <div className="thing">
                 <Timeline className="thing"
                   dataSource={{
