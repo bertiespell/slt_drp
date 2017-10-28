@@ -97,7 +97,6 @@ class Contact extends Component {
                             onChange={this.handleChange}
                         />
                         <FormControl.Feedback />
-                        <HelpBlock>Make sure to enter a valid email address</HelpBlock>
                         </FormGroup>
                     </form>
                 </div>
