@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/lib/Nav';
 // import MenuItem from 'react-bootstrap/lib/MenuItem';
 // import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import NavItem from 'react-bootstrap/lib/NavItem';
-import brandImage from './images/smallbluelogo.jpg';
+import brandImage from './images/logo.png';
 
 class NavBar extends Component {
     render() {
@@ -22,17 +22,13 @@ class NavBar extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <div>
-                  <Nav className="left-nav-stuff">
-                    <div>
-                      <Link to="/">&hearts;Home&hearts;</Link>
-                      <Link to="/events">&hearts;Events&hearts;</Link>
-                    </div>
+                  <Nav>
+                    <NavItem><Link to="/">&hearts;Home&hearts;</Link></NavItem>
+                    <NavItem className="more-right"><Link to="/events">&hearts;Events&hearts;</Link></NavItem>
                   </Nav>
-                  <Nav pullRight className="right-nav-stuff">
-                    <div>
-                      <Link to="/press">&hearts;Press&hearts;</Link>
-                      <Link to="/contact">&hearts;Contact&hearts;</Link>
-                    </div>
+                  <Nav pullRight>
+                    <NavItem className="more-right"><Link to="/press">&hearts;Press&hearts;</Link></NavItem>
+                    <NavItem><Link to="/contact">&hearts;Contact&hearts;</Link></NavItem>
                   </Nav>
                 </div>
               </Navbar.Collapse>

@@ -13,7 +13,7 @@ import { createLogger } from 'redux-logger'
 import Press from './components/press';
 import About from './components/about';
 import Events from './components/events';
-import Art from './components/art';
+import Contact from './components/contact';
 import reducer from './reducers/index.reducer';
 import Home from './components/home';
 
@@ -27,7 +27,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path = '/' component={Home}/>
         <Route path="/press" component={Press}/>
-        <Route path="/art" component={Art}/>
+        <Route path="/contact" component={Contact}/>
         <Route path="/about" component={About}/>
         <Route path="/events" component={Events}/>
       </Switch>
