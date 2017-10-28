@@ -74,7 +74,7 @@ class Contact extends Component {
     render() {
         return (
             <div className="form-container">
-                <h1 className="contact-us">Contact Us</h1>
+                <h1 className="contact-us">Contact Us &hearts;</h1>
                 <div className="contact-info-left">
                 <h2>Address</h2>
                 <p>St Michaels House</p>

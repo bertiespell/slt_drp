@@ -127,12 +127,16 @@ body {
 }
 
 .form-container {
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
   position: relative;
+  color: #373737;
 }
 
 .contact-us {
   text-align: center;
+  font-size: 40px;
 }
 
 .contact-info-right {
@@ -146,10 +150,6 @@ body {
 
 .contact-info-left {
     text-align: center;
-
-  /*width: 50%;
-  display: inline-block;
-  text-align: center;*/
 }
 
 .form-group .has-feedback {
