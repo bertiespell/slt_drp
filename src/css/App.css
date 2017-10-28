@@ -126,6 +126,35 @@ body {
   padding: 0;
 }
 
+.form-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  position: relative;
+  color: #373737;
+}
+
+.contact-us {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-info-right {
+    max-width: 50%;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+.contact-info-left {
+    text-align: center;
+}
+
+.form-group .has-feedback {
+  margin: 0;
+}
 
 .event-description {
   margin: 20px;
@@ -140,7 +169,6 @@ body {
 .more-right {
   margin-right: 20px;
 }
-
 
 .main-events-div {
   position: relative;
