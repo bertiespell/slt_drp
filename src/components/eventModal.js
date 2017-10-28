@@ -10,8 +10,7 @@ class EventDescription extends Component {
             <Modal.Title id="contained-modal-title-lg">{this.props.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body bsClass>
-            <h4>{this.props.title}</h4>
-            <p>{this.formatText(this.props.description)}</p>
+            <p className="event-description">{this.formatText(this.props.description)}</p>
             </Modal.Body>
             <Modal.Footer>
             <Button onClick={this.props.onHide}>Close</Button>

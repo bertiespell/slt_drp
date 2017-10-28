@@ -23,7 +23,7 @@ class Events extends Component {
     render() {
         let lgClose = (key) => this.setState({ [key]: false });
         return (
-            <div>
+            <div className="main-events-div">
                 {this.props.events.events.map((event, i) => {
                     let key = event.sys.id;
                     return (
@@ -34,11 +34,11 @@ class Events extends Component {
                                 </Media.Left>
                                 <Media.Body>
                                     <Media.Heading>{event.fields.eventTitle}</Media.Heading>
-                                    <p>{event.fields.eventVenue}</p>
-                                    <p>{event.fields.eventPrice}</p>
+                                    <p className="event-main-text">{event.fields.eventVenue}</p>
+                                    <p className="event-main-text">{event.fields.eventPrice}</p>
 
                                 <ButtonToolbar>
-                                    <Button bsStyle="primary" onClick={()=>this.setState({ [key]: true })}>
+                                    <Button className="gold-event-button" bsStyle="primary" onClick={()=>this.setState({ [key]: true })}>
                                     More Details
                                     </Button>
 
@@ -47,7 +47,7 @@ class Events extends Component {
                                 </Media.Body>
                             </Media>
                         </div>
-                    )                        
+                    )
                 })}
             </div>
         )
