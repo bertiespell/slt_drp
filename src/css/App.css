@@ -2,8 +2,15 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  background: darkcyan;
+  background: #DCD0C0;
 }
+
+/*
+#DCD0C0
+#F4F4F4
+#C0B283
+#373737
+*/
 .blackBackground img {
   background-color: black;
 }
@@ -84,14 +91,16 @@ body {
 }
 
 .navbar-default {
-  background-color: darkcyan;
+  background-color: #DCD0C0;
   border: none;
   min-height: 120px;
   margin: none;
   color: white;
 }
 .nav li a a {
-  color: white
+  color: #C0B283;
+  text-shadow: 2px 2px #373737;
+  font-size: 40px;
 }
 
 .thumbnail {
@@ -105,14 +114,66 @@ body {
 }
 
 .divider {
-  border-top: 3px solid #14295B;
+  border-top: 6px solid #373737;
   margin: 0;
   padding: 0;
   margin-bottom: 3px;
 }
 
 .divider2 {
-  border-top: 1px solid #14295B;
+  border-top: 3px solid #373737;
   margin: 0;
   padding: 0;
+}
+
+
+.event-description {
+  margin: 20px;
+}
+
+#contained-modal-title-lg {
+  text-align: center;
+  font-size: 30px;
+  color: #C0B283;
+}
+
+.more-right {
+  margin-right: 20px;
+}
+
+
+.main-events-div {
+  position: relative;
+  margin: 70px 222px 0px 222px;
+  /*border: 20px solid #C0B283;*/
+  padding: 40px;
+  /*border-radius: 9px;*/
+  border: #C0B283 solid 20px;
+  background-color: #373737;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 30px;
+}
+
+.media-heading {
+  color: #f4f4f4
+}
+
+.event-main-text {
+  color: #f4f4f4;
+}
+
+.gold-event-button {
+  background: #C0B283;
+  border-color: #C0B283;
+  text-shadow: 1px 1px #373737;
+}
+
+.media-body {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.media {
+  padding-bottom: 50px;
 }
