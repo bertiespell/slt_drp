@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
@@ -71,6 +72,10 @@ class Contact extends Component {
         this.setState({ value: e.target.value });
     }
 
+    submitEmail(email) {
+        console.log(email, '!!!!')
+    }
+
     render() {
         return (
             <div className="form-container">
@@ -95,8 +100,10 @@ class Contact extends Component {
                             value={this.state.value}
                             placeholder="Enter text"
                             onChange={this.handleChange}
+                            onSubmit={this.submitEmail}
                         />
                         <FormControl.Feedback />
+                        <Button className="gold-event-button-submit" bsStyle="primary" onClick={this.submitEmail.bind(null, this.state.value)}>Submit</Button>
                         </FormGroup>
                     </form>
                 </div>

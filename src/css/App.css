@@ -197,6 +197,13 @@ body {
   text-shadow: 1px 1px #373737;
 }
 
+.gold-event-button-submit {
+  background: #C0B283;
+  border-color: #C0B283;
+  text-shadow: 1px 1px #373737;
+  margin-top: 10px;
+}
+
 .media-body {
   padding-top: 15px;
   padding-left: 20px;
